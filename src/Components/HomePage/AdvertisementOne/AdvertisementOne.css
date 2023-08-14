@@ -1,0 +1,17 @@
+.AdvertisementOne_main{
+    height: 380px;
+    width: 335px;
+    background: white;
+}
+.AdvertisementOne_header{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 27px;
+    padding: 15px;
+}
+.AdvertisementOne_body{
+    padding-left: 15px;
+}
+.AdvertisementOne_footer{
+    padding: 15px;
+}

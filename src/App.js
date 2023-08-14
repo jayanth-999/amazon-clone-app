@@ -1,5 +1,5 @@
 import './App.css';
-import Mainpage from './Components/HomePage/Mainpage';
+import MainPage from './Components/HomePage/MainPage';
 import NavBar from './Components/NavBar/Navigation';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       {/* <p>I am Jayanth</p> */}
       <NavBar/>
-      <Mainpage/>
+      <MainPage/>
     </div>
   );
 }
