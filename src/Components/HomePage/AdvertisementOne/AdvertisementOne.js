@@ -9,7 +9,7 @@ function AdvertisementOne(props) {
             Up to 70% off | Clearance store
             </div>
             <div className='AdvertisementOne_body'>
-                <img src='https://ik.imagekit.io/amazonImg/amazon-image/V238940049_IN_PC_BAU_Edit_Creation_Laptops2X._SY608_CB667377204_.jpg?updatedAt=1691732707192' width='300px'/>
+                <img src='https://ik.imagekit.io/amazonImg/amazon-image/V238940049_IN_PC_BAU_Edit_Creation_Laptops2X._SY608_CB667377204_.jpg?updatedAt=1691732707192' width='260px'/>
             </div>
             <div className='AdvertisementOne_footer'>
                 see more

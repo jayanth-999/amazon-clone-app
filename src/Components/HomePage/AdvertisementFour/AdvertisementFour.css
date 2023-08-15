@@ -1,0 +1,18 @@
+.AdvertisementFour_main{
+    height: 360px;
+    width: 290px;
+    background: white;
+    margin: 10px;
+}
+.AdvertisementFour_header{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 27px;
+    padding: 15px;
+}
+.AdvertisementFour_body{
+    padding-left: 15px;
+}
+.AdvertisementFour_footer{
+    padding: 15px;
+}
