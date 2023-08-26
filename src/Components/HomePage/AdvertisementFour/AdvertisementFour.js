@@ -12,9 +12,9 @@ function AdvertisementFour(props) {
           <img src='https://ik.imagekit.io/amazonImg/amazon-image/tab10.jpg?updatedAt=1691732707128' className='AdvertisementOne_imgs'/>
           <img src='https://ik.imagekit.io/amazonImg/amazon-image/box2_2.jpg?updatedAt=1691732708235' className='AdvertisementOne_imgs'/>
         </div>
-        <div className='AdvertisementFour_footer'>see more</div>
-    </div>
+        <div className='AdvertisementFour_footer'>see all offers</div>
+    </div> 
   )
 }
 
-export default AdvertisementFour;
+export default AdvertisementFour; 
