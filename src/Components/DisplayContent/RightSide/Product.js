@@ -18,7 +18,7 @@ function Product(props) {
             </div>
             <div className="product__rating">
                 {/* <Rating name="read-only" value={3} readOnly /> */}
-                <Rating name="read-only" value="4" style={{ fontSize : "20px",paddingRight:'5px'}} readOnly />
+                <Rating name="read-only" value={4} style={{ fontSize : "20px",paddingRight:'5px'}} readOnly />
                 <div >{props.definition.rating}</div>
                 {/* Rating */}
             </div>

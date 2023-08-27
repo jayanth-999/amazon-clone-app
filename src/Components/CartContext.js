@@ -5,6 +5,7 @@ export const CartContext = createContext();
 class CartContextProvider extends Component {
     constructor(props) {
         super(props);
+        // eslint-disable-next-line eqeqeq
         let existingCart = localStorage.getItem('myCart') != undefined ? JSON.parse(localStorage.getItem('myCart')) : [];
         let cardAmount=existingCart.length;
 

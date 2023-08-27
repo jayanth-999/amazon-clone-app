@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LeftSide from './LeftSide/LeftSide';
 import RightSide from './RightSide/RightSide';
 
+
 class DisplayContent extends Component {
     state = {  } 
     render() { 
