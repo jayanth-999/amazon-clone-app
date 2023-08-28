@@ -15,7 +15,7 @@ class NavBar extends Component {
         return ( 
             <div className='navbar'>
                 <div className='nav_component'>
-                    <Link to="/" className='nav_logo' ></Link>
+                    <Link to="/amazon-clone-app/" className='nav_logo' ></Link>
                     <div className='nav_locator'>
                         <div className='nav_locatorImg'></div>
                         <div className='nav_location nav_text'>Bangalore</div>
@@ -47,7 +47,7 @@ class NavBar extends Component {
                         <div style={{ fontSize: "14px" }}>Returns </div>
                         <div style={{ fontWeight: "bold",fontSize: "14px" }}>& Order</div>
                     </div>
-                    <Link to="/checkout" className='nav_text nav_cart'>
+                    <Link to="/amazon-clone-app/checkout" className='nav_text nav_cart'>
                         <img className='nav_cartimg'/>
                         <div className='cart__item'>{size}</div>
                         <div className='navbar_text_cart'>Cart</div>

@@ -13,7 +13,7 @@ class MainPage extends Component {
         return ( 
             <div className='mainpage'>
                 {/* MainPage Lakshmi */}
-                <Link to='/display' style={{paddingTop: '260px', display : "flex", flexWrap: "wrap"}}>
+                <Link to='/amazon-clone-app/display' style={{paddingTop: '260px', display : "flex", flexWrap: "wrap"}}>
                     <AdvertisementOne/>
                     <AdvertisementFour/>
                     <AdvertisementOne/>

@@ -223,7 +223,7 @@ function PlaceOrder(props) {
                             <div> 
                                 <button className="placeorder__button addtocart" onClick={addTOCart}>Add to Cart</button>
                                 {/* <button className="placeorder__button addtocart" >Add to Cart</button> */}
-                                <Link to="/checkout">
+                                <Link to="/amazon-clone-app/checkout">
                                     <button className="placeorder__button buynow">Buy Now</button>
                                 </Link>
                             </div>

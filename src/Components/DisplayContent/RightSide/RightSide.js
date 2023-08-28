@@ -23,7 +23,7 @@ function RightSide() {
         <div className='RightSide__main'>
            {   
                 Productlist.map ( item =>(
-                        <Link key={item.id} to={`/order/`+item.id}>
+                        <Link key={item.id} to={`/amazon-clone-app/order/`+item.id}>
                             <Product definition={item} />
                         </Link>
                 ))   
