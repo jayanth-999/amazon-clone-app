@@ -9,6 +9,8 @@ import Paper from '@mui/material/Paper';
 import Rating from '@mui/material/Rating';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../CartContext';
+import getSymbolFromCurrency from 'currency-symbol-map';
+
 
 function PlaceOrder(props) {
 
@@ -146,16 +148,12 @@ function PlaceOrder(props) {
         ];
         //fake API
         let itemfilter = list.filter ( item => {
-            if(item.id == id) 
-                return item;
-            return item;
+            if(item.id== id) return item;
         })
 
         console.log(itemfilter); 
-        // console.log(productDetails)
         setProductDetails(itemfilter[0]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[item,size]);
+    },[]);
 
     return (
         <div>
@@ -176,7 +174,7 @@ function PlaceOrder(props) {
                         </div>
                         <hr></hr>
                         <div>
-                            <div className="textgap">Price:	<span className="pricetag">₹ {productDetails.price}</span></div>
+                            <div className="textgap">Price:	<span className="pricetag">{ getSymbolFromCurrency('INR')}{productDetails.price}</span></div>
                             <div className="textgap">FREE delivery: <strong>{productDetails.delivery}</strong></div>
                             <div className="textgap">EMI starts at ₹ {productDetails.emi}. No Cost EMI available</div>
                             <div style={{ color: "#007600", fontSize: "20px"}} className="textgap">{productDetails.status}</div>
@@ -222,10 +220,9 @@ function PlaceOrder(props) {
                                 <label><input type="checkbox" ></input>Apple Airpods</label><br></br>
                                 <label><input type="checkbox" ></input>Apple 20W USB Power Adapter</label>
                             </div>
-                            <div > 
-                                
+                            <div> 
                                 <button className="placeorder__button addtocart" onClick={addTOCart}>Add to Cart</button>
-                                <button className="placeorder__button addtocart" >Add to Cart</button>
+                                {/* <button className="placeorder__button addtocart" >Add to Cart</button> */}
                                 <Link to="/checkout">
                                     <button className="placeorder__button buynow">Buy Now</button>
                                 </Link>

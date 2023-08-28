@@ -12,9 +12,19 @@ class CartContextProvider extends Component {
         this.state = { 
             item: existingCart,
             size: cardAmount,
+            // item:[],
+            // size: 0,
             increment: (value) => {
                 let itemList= this.state.item;
                 itemList.push(value);
+
+                this.setState( { item: itemList } );
+                this.setState( { size: this.state.item.length });
+
+                this.state.saveToLocalCache();
+            },Decrement: (value) => {
+                let itemList= this.state.item;
+                itemList.pop(value);
 
                 this.setState( { item: itemList } );
                 this.setState( { size: this.state.item.length });
